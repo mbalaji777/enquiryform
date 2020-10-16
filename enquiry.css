@@ -9,6 +9,7 @@
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
 /* Style tab links */
 .tablink {
   background-color: #555;
@@ -28,11 +29,26 @@
   background-color: #777;
 }
 
+.form-group{
+  text-align: center;
+}
+
+input, textarea, select{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 767px) {
+  .form-group{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: white;
   display: none;
-  padding: 100px 20px;
+  padding: 100px;
   height: 100%;
   font-family: 'Baloo Tammudu 2', cursive;
   border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.5);
@@ -62,9 +78,18 @@
   mix-blend-mode: screen; /* This makes the cutout text possible */
 }
 
-#student {background-color:  #c5e1a5;}
-#program {background-color: #81d4fa;}
-#workshop {background-color: #9fa8da;}
+#student {
+  background-color:  #c5e1a5;
+  padding: 30px;
+}
+#program {
+  background-color: #81d4fa;
+  padding: 30px;
+}
+#workshop {
+  background-color: #9fa8da;
+  padding: 30px;
+}
 
 /*footer styling*/
 .site-footer
